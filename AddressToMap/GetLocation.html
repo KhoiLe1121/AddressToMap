@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="Site.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhJ41tEwzvBpw8lLtDTxhh14s1lVmBwxs"></script>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="angular-route.js"></script>
+    <script type="text/javascript" src="getLocation.js"></script>
+    <title>Get Location</title>
+</head>
+<body ng-app="getLocationApp">
+    <div id="searchDiv" ng-controller="locationManager">
+        <button id="searchButton" ng-click="getLocation()">Get Location</button>
+        <div id="searchFieldDiv"><input id="searchField" type="text" name="address" ng-model="address" /></div>
+    </div>
+    <div id="mapDiv">
+        <div id="map-canvas"></div>
+    </div>
+</body>
+</html>

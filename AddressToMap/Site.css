@@ -1,0 +1,44 @@
+﻿html, body, #map-canvas { 
+    height: 100%; 
+    margin: 0; 
+    padding: 0;
+}
+
+#searchDiv {
+    
+    width: 100%;
+    height: 66px;
+}
+
+#mapDiv {
+    
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 66px;
+    bottom: 0px;
+}
+
+#searchField {
+    width: 95%;
+    height: 100%;
+    padding-left: 10px;
+    font-size: 1.2em;
+
+}
+
+#searchFieldDiv {
+    display: block;
+    overflow: hidden;
+    height: 40px;
+    padding: 10px;
+}
+
+
+#searchButton {
+    float: right;
+    margin: 10px;
+    font-size: 1.2em;
+    height: 46px;
+}
+
