@@ -9,10 +9,10 @@
     <title>Get Location</title>
 </head>
 <body ng-app="getLocationApp">
-    <div id="searchDiv" ng-controller="locationManager">
-        <button id="searchButton" ng-click="getLocation()">Get Location</button>
+    <form ng-submit="getLocation()" id="searchDiv" ng-controller="locationManager">
+        <input type="submit" id="searchButton" value="Get Location" />
         <div id="searchFieldDiv"><input id="searchField" type="text" name="address" ng-model="address" /></div>
-    </div>
+    </form>
     <div id="mapDiv">
         <div id="map-canvas"></div>
     </div>
